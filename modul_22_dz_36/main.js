@@ -33,5 +33,3 @@ const input3 = getElementByid('input3');
 const output = getElementByid('output');
 
 updateTextarea(input1, input2, input3, output);
-
-
