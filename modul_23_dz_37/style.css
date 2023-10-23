@@ -1,0 +1,48 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    height: 100vh;
+    margin: 0;
+}
+
+.calculator {
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 300px;
+}
+
+input[type="range"],
+input[type="number"] {
+    width: 100%;
+    margin: 10px 0;
+}
+
+.diagram {
+    background-color: #ddd;
+    height: 100px;
+    position: relative;
+}
+
+.green {
+    background-color: #4caf50;
+    height: 0;
+    transition: height 0.5s;
+}
+
+.red {
+    background-color: #f44336;
+    height: 0;
+    transition: height 0.5s;
+}
+
+#commission,
+#result {
+    margin-top: 10px;
+    font-weight: bold;
+}
