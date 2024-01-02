@@ -1,23 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Range Slider Calculator</title>
 </head>
 <body>
-    <div class="calculator">
-        <input type="range" id="rangeInput">
-        <input type="number" id="numberInput">
-        <div class="diagram">
-            <div class="green"></div>
-            <div class="red"></div>
-        </div>
-        <div class="commission" id="commissionOn">Комісія: 0%</div>
-        <div class="result" id="result">Результат: 0</div>
+  <div class="calculator">
+    <label for="rangeInput">Select value:</label>
+    <input type="range" id="rangeInput" min="0" max="100" value="0">
+    
+    <label for="numberInput">Entered value:</label>
+    <input type="number" id="numberInput" min="0" max="100" value="0">
+    
+    <div class="chart">
+      <div class="green-bar"></div>
+      <div class="red-bar"></div>
     </div>
+  </div>
 
-    <script src="main.js"></script>
+  
 </body>
+    <script src="main.js"></script>
 </html>
