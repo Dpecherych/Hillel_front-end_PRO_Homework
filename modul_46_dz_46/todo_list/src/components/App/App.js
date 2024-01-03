@@ -47,9 +47,7 @@ function App() {
     <div className='wrapper'>
       <div className='container'>
         <h1 className='title'>TodoList</h1>
-        <Form
-          putTodo={putTodo}
-        />
+        
         <ul className='todos'>
           {
             todos.map(todo => {
@@ -65,6 +63,9 @@ function App() {
             })
           }
         </ul>
+        <Form
+          putTodo={putTodo}
+        />
         
         <div className='info'>
           <span>All todos: {allTodos}</span>
